@@ -13,6 +13,6 @@ config.plugins = config.plugins.concat([
 var cssLoaders = config.module.loaders[0].loaders
 console.log(cssLoaders)
 config.module.loaders[0].loaders = null
-config.module.loaders[0].loader = extractCSS.extract(cssLoaders.slice(1, 10))
+config.module.loaders[0].loaders = extractCSS.extract(cssLoaders.slice(1, 10))
 
 module.exports = config
